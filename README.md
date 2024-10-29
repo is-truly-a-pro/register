@@ -38,4 +38,4 @@ If you have any problems, feel free to [open a issue](https://github.com/is-real
 5. That's all, enjoy your `is-truly-a.pro` domain!
 
 ### Similar Services
-If you want to find services similar to is-not.cool, please check out [Open Domains](https://github.com/open-domains/register) and [is-a.dev](https://github.com/is-a-dev/register).
+If you want to find services similar to is-truly-a.pro, please check out [Open Domains](https://github.com/open-domains/register) and [is-a.dev](https://github.com/is-a-dev/register).
