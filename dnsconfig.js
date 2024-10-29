@@ -1,7 +1,7 @@
 var regNone = NewRegistrar("none");
 var providerCf = DnsProvider(NewDnsProvider("cloudflare"));
 
-var rootDomain = 'is-trully-a.pro';
+var rootDomain = 'is-truly-a.pro';
 var proxy = { // https://stackexchange.github.io/dnscontrol/providers/cloudflare
   on: { "cloudflare_proxy": "on" },
   off: { "cloudflare_proxy": "off" }
