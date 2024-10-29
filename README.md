@@ -35,7 +35,7 @@ If you have any problems, feel free to [open a issue](https://github.com/is-real
 > Only select the records you need, this is just a example on what all the records we support should be.
 
 4. After the Pull Request is merged, DNS should propogate in a moment or 24 hours.
-5. That's all, enjoy your `is-really.pro` domain!
+5. That's all, enjoy your `is-truly-a.pro` domain!
 
 ### Similar Services
 If you want to find services similar to is-not.cool, please check out [Open Domains](https://github.com/open-domains/register) and [is-a.dev](https://github.com/is-a-dev/register).
