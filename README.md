@@ -1,4 +1,4 @@
-<h1 align="center">is-trully-a.pro</h1>
+<h1 align="center">is-truly-a.pro</h1>
 
 ## Issues
 If you have any problems, feel free to [open a issue](https://github.com/is-really-pro/register/issues/new/choose).
