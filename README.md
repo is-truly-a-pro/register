@@ -1,7 +1,7 @@
 <h1 align="center">is-truly-a.pro</h1>
 
 ## Issues
-If you have any problems or want to report a subdomain, feel free to [open a issue](https://github.com/is-really-pro/register/issues/new/choose).
+If you have any problems or want to report a subdomain, feel free to [open a issue](https://github.com/is-really-a-pro/register/issues/new/choose).
 
 ## Register
 1. Fork the repo.
