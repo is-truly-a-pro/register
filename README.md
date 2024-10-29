@@ -33,6 +33,8 @@ If you have any problems, feel free to [open a issue](https://github.com/is-real
 ```
 > [!NOTE]
 > Only select the records you need, this is just a example on what all the records we support should be.
+> We are not responsible for contents of the subdomains under is-truly-a.pro , visit the subdomains with your own risk.While you may report sites with nsfw and illegal or dangerous content, we will remove the subdomains which have those content
+> We strongly recommend NS records so u don't have to create new pr everytime to change records 
 
 4. After the Pull Request is merged, DNS should propogate in a moment or 24 hours.
 5. That's all, enjoy your `is-truly-a.pro` domain!
