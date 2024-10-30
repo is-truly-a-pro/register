@@ -9,5 +9,5 @@
         "CNAME": "is-truly-a-pro.github.io",
     },
 
-    "proxied": false
+    "proxied": true
 }
