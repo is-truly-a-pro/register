@@ -1,4 +1,4 @@
-<h1 align="center">is-truly-a.pro</h1>
+![banner](./assets/banner.png)
 
 ## Issues
 If you have any problems or want to report a subdomain, feel free to [open a issue](https://github.com/is-truly-a-pro/register/issues/new/choose).
