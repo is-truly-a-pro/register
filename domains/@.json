@@ -1,12 +1,10 @@
 {
     "owner": {
-        "username": "no",
-        "email": "no",
-        "repo": "no"
+        "username": "is-truly-a-pro"
     },
 
     "record": {
-        "CNAME": "is-truly-a-pro.github.io",
+        "CNAME": "is-truly-a-pro.github.io"
     },
 
     "proxied": true
