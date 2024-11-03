@@ -7,6 +7,7 @@
     "pretty_much_everything": "JamieD132"
   },
   "record": {
-    "CNAME": "elaruu-github-io.pages.dev"
+    "MX": ["mx1.improvemx.com","mx2.improvemx.com"],
+    "TXT": ["v=spf1 include:spf.improvmx.com ~all"]
   }
 }
