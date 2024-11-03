@@ -8,6 +8,6 @@
   },
   "record": {
     "MX": ["mx1.improvemx.com","mx2.improvemx.com"],
-    "TXT": "v=spf1 include:spf.improvmx.com ~all"
+    "TXT": ["v=spf1 include:spf.improvmx.com ~all"]
   }
 }
