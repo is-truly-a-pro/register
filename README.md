@@ -11,8 +11,7 @@
 {
     "owner": {
         "username": "yourgithubusername",
-        "email": "hello@example.com",
-        "repo": "yourrepohere"
+        "email": ["test@example.com", "another@example.com"]
     },
 
     "record": {
