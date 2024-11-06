@@ -1,67 +1,69 @@
-name: Combine Domain JSON Files
+name: Combine JSON Files
 
 on:
-  workflow_dispatch:
   push:
     paths:
       - 'domains/*.json'
+    branches:
+      - main
+  workflow_dispatch:
 
 jobs:
-  build:
+  combine_json:
     runs-on: ubuntu-latest
-    
-    permissions:   # Grant write access to the repository
-      contents: write
-    
     steps:
-    - uses: actions/checkout@v3
-    
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '18'
-        
-    - name: Install dependencies
-      run: npm --version
-      
-    - name: Combine JSON files
-      run: |
-        const fs = require('fs');
-        const path = require('path');
-        
-        const domainsDir = path.join(__dirname, 'domains');
-        
-        let combinedData = {};
-        
-        fs.readdirSync(domainsDir).forEach(file => {
-          if (file.endsWith('.json')) {
-            const filePath = path.join(domainsDir, file);
-            const fileData = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-            
-            const domain = file.replace('.json', '');
-            const { username, email, discord } = fileData.owner;
-            
-            if (username && email) {
-              combinedData[domain] = {
-                username,
-                email,
-                discord: discord || null
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Combine JSON files
+        run: |
+          const fs = require('fs');
+          const path = require('path');
+
+          const dirPath = path.join(__dirname, 'domains');
+          const outputPath = path.join(__dirname, 'index.json');
+
+          const combinedData = [];
+          fs.readdirSync(dirPath).forEach(file => {
+            if (file.endsWith('.json')) {
+              const data = JSON.parse(fs.readFileSync(path.join(dirPath, file), 'utf8'));
+              const domain = file.replace('.json', '.is-truly-a.pro');
+
+              const entry = {
+                domain,
+                owner: {
+                  username: data.owner.username || null,
+                  email: data.owner.email || null,
+                  discord: data.owner.discord || null
+                }
               };
+
+              // Remove empty fields
+              entry.owner = Object.fromEntries(
+                Object.entries(entry.owner).filter(([_, v]) => v != null)
+              );
+
+              combinedData.push(entry);
             }
-          }
-        });
-        
-        fs.writeFileSync('index.json', JSON.stringify(combinedData, null, 2));
-      env:
-        NODE_VERSION: ${{ matrix.node-version }}
-        
-    - name: Commit and push changes
-      uses: EndBug/add-and-commit@v9
-      with:
-        default_author: github_actions
-        message: 'Update index.json'
-        add: 'index.json'
-        force: true
-        repository: is-truly-a-pro/api
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+          });
+
+          fs.writeFileSync(outputPath, JSON.stringify(combinedData, null, 2));
+
+      - name: Push to API repository
+        uses: cpina/github-action-push-to-another-repository@main
+        with:
+          source-directory: './'
+          destination-github-username: 'is-truly-a-pro'
+          destination-repository-name: 'api'
+          target-branch: 'main'
+          commit-message: 'Update index.json with combined domains'
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.GH_API_TOKEN }}
