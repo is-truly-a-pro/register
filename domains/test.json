@@ -1,0 +1,12 @@
+{
+    "owner": {
+        "username": "test",
+        "email": "test"
+    },
+
+    "record": {
+        "A": ["216.24.57.1"]
+    },
+
+    "proxied": false
+}
