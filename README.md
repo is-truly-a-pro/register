@@ -34,7 +34,7 @@
 > [!NOTE]
 > Only select the records you need, this is just a example on what all the records we support should be.
 
-4. After the Pull Request is merged, DNS should propogate in a moment or 24 hours.
+4. After the pull request is merged, DNS should propagate within about 15 minutes to a maximum of 24 hours.
 5. That's all, enjoy your `is-truly-a.pro` domain!
 
 > [!WARNING]
