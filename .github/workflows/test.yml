@@ -22,7 +22,7 @@ jobs:
         node-version: '18'
         
     - name: Install dependencies
-      run: npm ci
+      run: npm --version
       
     - name: Combine JSON files
       run: |
