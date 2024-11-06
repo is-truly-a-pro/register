@@ -10,6 +10,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     
+    permissions:   # Grant write access to the repository
+      contents: write
+    
     steps:
     - uses: actions/checkout@v3
     
