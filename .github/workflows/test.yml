@@ -1,0 +1,64 @@
+name: Combine Domain JSON Files
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'domains/*.json'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+        
+    - name: Install dependencies
+      run: npm ci
+      
+    - name: Combine JSON files
+      run: |
+        const fs = require('fs');
+        const path = require('path');
+        
+        const domainsDir = path.join(__dirname, 'domains');
+        
+        let combinedData = {};
+        
+        fs.readdirSync(domainsDir).forEach(file => {
+          if (file.endsWith('.json')) {
+            const filePath = path.join(domainsDir, file);
+            const fileData = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+            
+            const domain = file.replace('.json', '');
+            const { username, email, discord } = fileData.owner;
+            
+            if (username && email) {
+              combinedData[domain] = {
+                username,
+                email,
+                discord: discord || null
+              };
+            }
+          }
+        });
+        
+        fs.writeFileSync('index.json', JSON.stringify(combinedData, null, 2));
+      env:
+        NODE_VERSION: ${{ matrix.node-version }}
+        
+    - name: Commit and push changes
+      uses: EndBug/add-and-commit@v9
+      with:
+        default_author: github_actions
+        message: 'Update index.json'
+        add: 'index.json'
+        force: true
+        repository: is-truly-a-pro/api
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
