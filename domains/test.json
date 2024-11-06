@@ -1,7 +1,8 @@
 {
     "owner": {
         "username": "test",
-        "email": "test"
+        "email": "test",
+        "discord": ["testuser","testid"]
     },
 
     "record": {
