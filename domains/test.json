@@ -1,7 +1,7 @@
 {
     "owner": {
         "username": "is-truly-a-pro",
-        "email": ["test@example.com", "another@example.com"]
+        "email": ["test@example.com", "anotheremail@example.com"]
     },
     "record": {
         "A": ["216.24.57.1"]
