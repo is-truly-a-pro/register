@@ -13,6 +13,9 @@ concurrency:
     group: ${{ github.ref }}-api
     cancel-in-progress: true
 
+permissions:
+    contents: write  
+
 jobs:
     update:
         name: Update
@@ -25,7 +28,7 @@ jobs:
               with:
                   repository: is-truly-a-pro/api
                   path: api
-                  token: ${{ secrets.GITHUB_TOKEN }} 
+                  token: ${{ secrets.GITHUB_TOKEN }}  
 
             - uses: actions/setup-node@v4
               with:
@@ -43,4 +46,4 @@ jobs:
                   user-email: actions@github.com
                   user-name: "Someone"
               env:
-                  API_TOKEN_GITHUB: ${{ secrets.GITHUB_TOKEN }} 
+                  API_TOKEN_GITHUB: ${{ secrets.GITHUB_TOKEN }}  
