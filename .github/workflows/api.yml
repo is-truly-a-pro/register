@@ -1,0 +1,46 @@
+name: API Updater
+
+on:
+    push:
+        branches: [main]
+        paths:
+            - "domains/*"
+            - ".github/workflows/api.yml"
+
+    workflow_dispatch:
+
+concurrency:
+    group: ${{ github.ref }}-api
+    cancel-in-progress: true
+
+jobs:
+    update:
+        name: Update
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v4
+
+            - uses: actions/checkout@v4
+              with:
+                  repository: is-truly-a-pro/api
+                  path: api
+                  token: ${{ secrets.GH_API }}
+
+            - uses: actions/setup-node@v4
+              with:
+                  node-version: 20.x
+
+            - name: Update Data
+              run: node api/updater.js
+
+            - name: Commit
+              uses: cpina/github-action-push-to-another-repository@main
+              with:
+                  source-directory: "raw-api"
+                  destination-github-username: is-truly-a-pro
+                  destination-repository-name: api
+                  user-email: actions@github.com
+                  user-name: "GitHub Actions"
+              env:
+                  API_TOKEN_GITHUB: ${{ secrets.GH_API_TOKEN }}
