@@ -1,13 +1,7 @@
 {
     "owner": {
-        "username": "test",
-        "email": ["test@example.com", "another@example.com"],
-        "discord": [
-            {
-                "username": "testuser",
-                "id": "testid"
-            }
-        ]
+        "username": "is-truly-a-pro",
+        "email": ["test@example.com", "another@example.com"]
     },
     "record": {
         "A": ["216.24.57.1"]
