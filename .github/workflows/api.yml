@@ -37,10 +37,10 @@ jobs:
             - name: Commit
               uses: cpina/github-action-push-to-another-repository@main
               with:
-                  source-directory: "raw-api"
+                  source-directory: "api"
                   destination-github-username: is-truly-a-pro
                   destination-repository-name: api
                   user-email: actions@github.com
-                  user-name: "GitHub Actions"
+                  user-name: "Someone"
               env:
                   API_TOKEN_GITHUB: ${{ secrets.GH_API_TOKEN }}
