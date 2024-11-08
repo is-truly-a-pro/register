@@ -1,4 +1,4 @@
-name: API Updater
+name: API
 
 on:
     push:
