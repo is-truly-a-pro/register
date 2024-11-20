@@ -6,7 +6,6 @@
 
     "record": {
         "TXT": ["_github-pages-challenge-tr1xem.trix=b2b8238a381a3d699cc09cf07a22ae"],
-        "CNAME" : "tr1xem.github.io"
     },
     "proxied": true
 }
