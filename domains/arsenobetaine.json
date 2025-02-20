@@ -1,0 +1,12 @@
+{
+    "owner": {
+        "username": "arsenobetaine",
+        "email": ["arsenobetaine@gmail.com"]
+    },
+
+    "record": {
+        "CNAME": "arsenobetaine.github.io"
+    },
+
+    "proxied": false
+}
