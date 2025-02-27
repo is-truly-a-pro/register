@@ -1,0 +1,30 @@
+{
+    "owner": {
+        "username": "cyniez",
+        "email": ["syed.sakibul.islam.narail@gmail.com", "syed.sakibul.islam2008@gmail.com"]
+    },
+    "record": {
+        "CNAME": [
+            "key1._domainkey.cyniez.is-truly-a.pro",
+            "key2._domainkey.cyniez.is-truly-a.pro",
+            "key3._domainkey.cyniez.is-truly-a.pro",
+            "autoconfig.cyniez.is-truly-a.pro"
+        ],
+        "MX": [
+            "aspmx1.migadu.com",
+            "aspmx2.migadu.com",
+        ],
+        "TXT": [
+            "hosted-email-verify=qsb4mmba",
+            "v=spf1 include:spf.migadu.com -all",
+            "v=DMARC1; p=quarantine;"
+        ],
+        "SRV": [
+            { "priority": 0, "weight": 1, "port": 443, "target": "autodiscover.migadu.com" },
+            { "priority": 0, "weight": 1, "port": 465, "target": "smtp.migadu.com" },
+            { "priority": 0, "weight": 1, "port": 993, "target": "imap.migadu.com" },
+            { "priority": 0, "weight": 1, "port": 995, "target": "pop.migadu.com" }
+        ]
+    },
+    "proxied": false
+}
