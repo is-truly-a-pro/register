@@ -1,0 +1,12 @@
+{
+    "owner": {
+        "username": "JustDeveloper1",
+        "email": ["dev@j.is-a.dev", "justdeveloper@juststudio.is-a.dev"]
+    },
+
+    "record": {
+        "TXT": ["dh=030694bfe29fdd40325a135271573c690c389a16"]
+    },
+
+    "proxied": false
+}
