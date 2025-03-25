@@ -1,0 +1,13 @@
+{
+  "owner": {
+    "username": "JonathanXDR",
+    "email": "jonathan.russ@bluewin.ch"
+  },
+  "record": {
+    "A": [
+      "76.76.21.21"
+    ],
+    "TXT": "google-site-verification=tf42ckQI4xMPFfUYHPpzJV-RKgTR_XqsYjMAlNo9Kac"
+  },
+  "proxied": false
+}
