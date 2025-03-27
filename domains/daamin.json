@@ -1,0 +1,12 @@
+{
+    "owner": {
+        "username": "Daamin909",
+        "email": "ashai.daamin@gmail.com"
+    },
+
+    "record": {
+        "CNAME": "https://daamin909-github-io.vercel.app/",
+    },
+
+    "proxied": false
+}
