@@ -1,0 +1,13 @@
+{
+    "owner": {
+        "username": "ColinLeDev",
+        "discord": "492742642795413531",
+        "email": "webmaster@col1n.fr"
+    },
+
+    "record": {
+        "CNAME": "proxy.col1n.fr"
+    },
+
+    "proxied": false
+}
