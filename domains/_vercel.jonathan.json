@@ -1,0 +1,10 @@
+{
+  "owner": {
+    "username": "JonathanXDR",
+    "email": "jonathan.russ@bluewin.ch"
+  },
+  "record": {
+    "TXT": "vc-domain-verify=jonathan.is-truly-a.pro,112c75ce7074837724fd"
+  },
+  "proxied": false
+}
