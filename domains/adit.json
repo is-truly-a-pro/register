@@ -1,0 +1,14 @@
+{
+    "owner": {
+        "username": "adit",
+        "email": "admin@kazuowill.serv00.net"
+    },
+
+    "record": {
+        "A": "128.204.223.98",
+        "MX": "mail5.serv00.com",
+        "TXT": "v=spf1 mx a include:mail5.serv00.com -all"
+    },
+
+    "proxied": false
+}
