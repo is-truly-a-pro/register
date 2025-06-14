@@ -1,0 +1,12 @@
+{
+    "owner": {
+        "username": "agungsantoso",
+        "email": ["agung.santoso.pranoto@gmail.com"]
+    },
+
+    "record": {
+        "CNAME": "vercel-ten-dusky.vercel.app"
+    },
+
+    "proxied": true
+} 
