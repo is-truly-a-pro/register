@@ -17,7 +17,7 @@
 > Services like Vercel and Netlify which require verifying root domain are not supported as we are not in the Public Suffix List.
 
 ## Issues
-If you have any problems or want to report a subdomain, feel free to [open a issue](https://github.com/is-truly-a-pro/register/issues/new/choose).
+If you have any problems or want to report a subdomain, feel free to [open a issue](https://github.com/is-truly-a-pro/register/issues/new/choose) or join our [Discord server](https://discord.gg/MGSvZBdc4p].
 
 ### Similar Services
 If you want to find services similar to is-truly-a.pro, please check out [Open Domains](https://github.com/open-domains/register) and [is-a.dev](https://github.com/is-a-dev/register).
