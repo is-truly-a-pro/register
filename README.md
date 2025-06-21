@@ -13,6 +13,8 @@
 > [!WARNING]
 > We only give out NS records to those who have a reasonable use case for them. If you don't have a reasonable use case for them, we will close your PR.
 
+> [!WARNING]
+> Services like Vercel and Netlify which require verifying root domain are not supported as we are not in the Public Suffix List.
 
 ## Issues
 If you have any problems or want to report a subdomain, feel free to [open a issue](https://github.com/is-truly-a-pro/register/issues/new/choose).
