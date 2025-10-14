@@ -1,0 +1,12 @@
+{
+    "owner": {
+        "username": "pidi",
+        "email": "peterdbaltes@gmail.com"
+    },
+
+    "record": {
+        "CNAME": "redretep.github.io"
+    },
+
+    "proxied": false
+}
