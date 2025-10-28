@@ -1,3 +1,6 @@
+> [!WARNING]
+> The domain has expired, we will no longer accept new registrations.
+
 ![banner](./assets/banner.png)
 <p align="center">
    <a href="https://discord.gg/MGSvZBdc4p"><img alt="Discord Server" src="https://invidget.switchblade.xyz/MGSvZBdc4p"></a>
